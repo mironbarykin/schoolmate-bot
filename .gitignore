@@ -3,5 +3,10 @@ __pycache__/
 *.pyo
 *.pyd
 *.log
+*.lock
+*.sh
 .vscode
 .idea
+
+
+storage/
