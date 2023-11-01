@@ -32,6 +32,15 @@ class Storage:
             else:
                 raise InvalidStorageStructureException('Invalid storage structure. Students file missing.')
 
+    def get_users(self, permission: int = 0):
+        result = list()
+        with open(self.__students_file, 'r') as csvfile:
+            reader = csv.DictReader(csvfile, fieldnames=USER_PROPERTIES)
+            for row in reader:
+                if int(row['permission']) >= permission:
+                    result.append(row)
+        return result
+
     def create_user(self, user_id, user_name):
         with open(self.__students_file, 'a', newline='') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=USER_PROPERTIES)

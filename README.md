@@ -15,5 +15,10 @@ The goal of this project is to create a Telegram bot that serves as a diverse to
 
 By combining these features, SchoolMate Bot aims to streamline the organization of educational activities and foster a sense of community among classmates.
 
+## Contributing
+
+Essential information for contributors,
+- [Storage Documentation](documentation/storage.md)
+
 ---
 © 2023 MIRON BARYKIN. THIS OPEN-SOURCE SOFTWARE IS LICENSED UNDER THE [MIT LICENSE](LICENSE).
