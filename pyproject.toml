@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "schoolmate-bot"
+version = "0.1.0"
+description = "Telegram bot designed to help students manage their school-related activities"
+authors = ["Miron Barykin <barykinmiron@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-telegram-bot = "^20.6"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pylint = "^3.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
